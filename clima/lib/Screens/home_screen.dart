@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
     location.getLocation();
     double lon = location.longitude;
     double lat = location.latitude;
-    var api = "b4af08d175eafcc22be4257d334d17cf";
+    var api = "ypur_api";
     var apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}";
     var url = Uri.https('api.openweathermap.org', '/data/2.5/weather',
         {'lat': lat.toString(), 'lon': lon.toString(), 'appid':api});
